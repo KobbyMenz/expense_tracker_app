@@ -1,0 +1,21 @@
+.expense-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.expense-filter__year {
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.expense-filter h3 {
+    color: #fff;
+    font-size: 1rem;
+}

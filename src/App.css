@@ -7,6 +7,99 @@
   pointer-events: none;
 }
 
+.main {
+  /* width: 40rem; */
+  background: #4b4b4b;
+  /* height: 50; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.expenses_container {
+  background: #000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 0rem auto 1.5rem auto;
+
+  min-height: 40rem;
+  width: 50rem;
+  max-width: 95%;
+}
+
+.footer {
+  color: #9d9d9d;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-transform: none;
+}
+
+.expenses {
+  background: #161616;
+  height: 32rem;
+  overflow-y: auto;
+  margin-right: 0rem;
+  border-radius: 12px;
+  /* transition: 1s ease-in-out; */
+}
+
+.no-expenses__message {
+  color: #9d9d9d;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 4rem;
+  /* transform: translateY(6rem); */
+  transition: 1s ease-in-out;
+}
+
+.expense__count__container {
+  color: #030303;
+  position: relative;
+  margin-bottom: 3.8rem;
+}
+
+.expense__count__container::before {
+  content: "Total expenses:";
+  background: #a892ee;
+  width: 8rem;
+  /* height: 1rem; */
+  position: absolute;
+  left: 0;
+  /* top: 0.2rem; */
+  font-weight: bold;
+  text-align: left;
+  padding: 0.1rem 0.5rem 0.3rem 0.6rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  /* margin-bottom: 1rem; */
+  transform: translateY(0%);
+}
+
+.expense__count {
+  position: absolute;
+  left: 8rem;
+  transform: translateY(-22%);
+  background: #a892ee;
+  padding: 0.6rem;
+  height: 3rem;
+  width: 3rem;
+  text-align: center;
+  border-radius: 60%;
+  font-size: 1.3rem;
+  font-weight: bold;
+  z-index: 1;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26); */
+}
+
+/* @media (max-width: 450px){
+  .expenses_container {
+    width: 50rem;
+  }
+} */
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -24,7 +117,7 @@
   color: white;
 }
 
-.App-link {
+/* .App-link {
   color: #61dafb;
 }
 
@@ -35,4 +128,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
